@@ -5,12 +5,23 @@
              x:Class="MauiApp10.ListaProdutoPage"
              Title="ListaProdutoPage">
     <VerticalStackLayout>
-        <ListView ItemsSource="{x:Static local:Produto.Lista}">
+        <ListView x:Name="lstProduto">
             <ListView.ItemTemplate>
-                <DataTemplate>
+                <DataTemplate x:DataType="local:Produto">
                     <ViewCell>
-                        <Label 
-                            Text="{Binding Nome}"/>
+                        <Grid>
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="Auto"/>
+                                <RowDefinition Height="Auto"/>
+                                <RowDefinition Height="Auto"/>
+                            </Grid.RowDefinitions>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="Auto"/>
+                            </Grid.ColumnDefinitions>
+                            <Label Text="{Binding Nome}"/>
+                            <Label Text="{Binding Preco}"/>
+                            <Label Text="{Binding Categoria}"/>
+                        </Grid>
                     </ViewCell>
                 </DataTemplate>
             </ListView.ItemTemplate>

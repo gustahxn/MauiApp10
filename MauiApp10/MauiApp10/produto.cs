@@ -19,7 +19,7 @@ namespace MauiApp10
             get
             {
                 List<Produto> lista = new List <Produto>();
-                lista.Add(new Produto() { Nome = "Adaga", Preco = 280, Categoria = "Acessorios" });
+                lista.Add(new Produto() { Nome = "Adaguinha", Preco = 280, Categoria = "Acessorios" });
                 lista.Add(new Produto() { Nome = "Calça", Preco = 400, Categoria = "Acessorios" });
                 lista.Add(new Produto() { Nome = "Capacete", Preco = 270, Categoria = "Acessorios" });
                 lista.Add(new Produto() { Nome = "Tridente", Preco = 260, Categoria = "Acessorios" });
