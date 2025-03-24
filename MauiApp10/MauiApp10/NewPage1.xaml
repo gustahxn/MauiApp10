@@ -3,29 +3,48 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="MauiApp10.NewPage1"
              BindingContext="{x:Reference Produto}"
-             Title="NewPage1">
-    <VerticalStackLayout>
-        <HorizontalStackLayout>
-        <Label 
-            Text="Nome"
-            VerticalOptions="Start" 
-            HorizontalOptions="Start" />
-        <Label 
-            Text="{Binding Nome}"
-            FontSize="Large"   
-            VerticalOptions="Start" 
-            HorizontalOptions="End" />
-        </HorizontalStackLayout>
-        <Label 
-            Text="{Binding Preco}"
-            FontSize="Large"    
-            VerticalOptions="Start" 
-            HorizontalOptions="End" />
-    
-        <Label 
-            Text="{Binding Categoria}"
-            FontSize="Large"    
-            VerticalOptions="Start" 
-            HorizontalOptions="End" />
-    </VerticalStackLayout>
+             Title="Detalhes do Produto"
+             BackgroundColor="#85929e">
+
+    <ScrollView>
+        <VerticalStackLayout BackgroundColor="#6A449B" Padding="20" Spacing="15">
+
+            <Frame BackgroundColor="#ffffff" CornerRadius="10" Padding="15" HasShadow="True">
+                <HorizontalStackLayout Spacing="10" VerticalOptions="CenterAndExpand">
+                    <Label Text="Nome:" FontSize="Medium" FontAttributes="Bold" TextColor="#333"/>
+                    <Label Text="{Binding Nome}" FontSize="Medium" TextColor="#000" />
+                </HorizontalStackLayout>
+            </Frame>
+
+            <Frame BackgroundColor="#ffffff" CornerRadius="10" Padding="15" HasShadow="True">
+                <HorizontalStackLayout Spacing="10" VerticalOptions="CenterAndExpand">
+                    <Label Text="Preço: R$" FontSize="Medium" FontAttributes="Bold" TextColor="#333"/>
+                    <Label Text="{Binding Preco}" FontSize="Medium" TextColor="#009688" />
+                </HorizontalStackLayout>
+            </Frame>
+
+            <Frame BackgroundColor="#ffffff" CornerRadius="10" Padding="15" HasShadow="True">
+                <HorizontalStackLayout Spacing="10" VerticalOptions="CenterAndExpand">
+                    <Label Text="Categoria:" FontSize="Medium" FontAttributes="Bold" TextColor="#333"/>
+                    <Label Text="{Binding Categoria}" FontSize="Medium" TextColor="#000" />
+                </HorizontalStackLayout>
+            </Frame>
+
+            <Frame BackgroundColor="#ffffff" CornerRadius="10" Padding="15" HasShadow="True">
+                <HorizontalStackLayout Spacing="10" VerticalOptions="CenterAndExpand">
+                    <Label Text="Ano:" FontSize="Medium" FontAttributes="Bold" TextColor="#333"/>
+                    <Label Text="{Binding Ano}" FontSize="Medium" TextColor="#000" />
+                </HorizontalStackLayout>
+            </Frame>
+            
+            <Frame BackgroundColor="#ffffff" CornerRadius="10" Padding="15" HasShadow="True">
+                <HorizontalStackLayout Spacing="10" VerticalOptions="CenterAndExpand">
+                    <Label Text="Plataforma:" FontSize="Medium" FontAttributes="Bold" TextColor="#333"/>
+                    <Label Text="{Binding Plataforma}" FontSize="Medium" TextColor="#000" />
+                </HorizontalStackLayout>
+            </Frame>
+
+
+        </VerticalStackLayout>
+    </ScrollView>
 </ContentPage>

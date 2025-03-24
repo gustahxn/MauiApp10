@@ -16,6 +16,6 @@ public partial class ListaProdutoPage : ContentPage
     private void ViewCell_Tapped(object sender, EventArgs e)
     {
 
-        Navigation.PushAsync(new ContentPage() { BindingContext = ((ViewCell)sender).BindingContext });
+        Navigation.PushAsync(new NewPage1() { BindingContext = ((ViewCell)sender).BindingContext });
     }
 }
