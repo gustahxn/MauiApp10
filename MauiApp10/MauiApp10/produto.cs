@@ -24,7 +24,7 @@ namespace MauiApp10
             {
                 List<Produto> lista = new List <Produto>();
                 lista.Add(new Produto() { Nome = "God of War", Preco = 220, Categoria = "Ação", Plataforma = "PS4/PS5", Ano = 2018 });
-                lista.Add(new Produto() { Nome = "The Last of Us Part II", Preco = 250, Categoria = "Ação/Aventura", Plataforma = "PS4", Ano = 2020 });
+                lista.Add(new Produto() { Nome = "The Last of Us Part I", Preco = 250, Categoria = "Ação/Aventura", Plataforma = "PS4", Ano = 2020 });
                 lista.Add(new Produto() { Nome = "Elden Ring", Preco = 300, Categoria = "RPG", Plataforma = "PS5/Xbox/PC", Ano = 2022 });
                 lista.Add(new Produto() { Nome = "FIFA 23", Preco = 280, Categoria = "Esportes", Plataforma = "PS5/Xbox/PC", Ano = 2022 });
                 lista.Add(new Produto() { Nome = "Cyberpunk 2077", Preco = 270, Categoria = "RPG", Plataforma = "PS5/Xbox/PC", Ano = 2020 });
